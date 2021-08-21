@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shiksha Bhavan.com</title>
+    <link rel="shortcut icon" type="image/svg" href="https://svgsilh.com/svg_v2/1917895.svg"/>
+
+
+    <!------------------------------- Bootstrap ------------------------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <!------------------------------- Fonts ------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&family=Schoolbell&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+    <!------------------------------- Font Awesome ------------------------------->
+    <script src="https://kit.fontawesome.com/b131aa1d6b.js" crossorigin="anonymous"></script>
+
+    <!------------------------------- CSS ------------------------------->
+    <style>
+        body {
+          background-color: #DDDDDD;
+          text-align: center;
+          color: aliceblue;
+        }
+        h1 {
+          font-family: 'Rubik', 'sans-serif';
+        }
+
+        h2 {
+          text-align: center;
+        }
+
+        /* Nav Bar */
+        .navigation {
+          position: fixed;
+          width: 100%;
+          text-align: center;
+          z-index: 99999;
+          box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 5%), inset 0 -1px 0 rgb(0 0 0 / 10%);
+        }
+
+        .navbar-brand{
+            font-size:34px;
+            margin: 0 10%;
+            color: aliceblue;
+            font-family: 'Schoolbell', 'cursive';
+        }
+
+        .navbar-brand img {
+          width: 4rem;
+          height: auto;
+        }
+
+        .navbar-brand:hover {
+          color: aliceblue;
+        }
+
+        .navbar-collapse {
+            position: relative;
+            text-align: right;
+        }
+
+        .nav-item {
+            margin: 0 20px;
+        }
+
+        .nav-link {
+          color: aliceblue;
+          font-size: 20px;
+        }
+
+        .nav-link:hover {
+          font-size: 21px;
+          color: aliceblue;
+        }
+
+        /* About Us */
+        .carousel {
+          position: relative;
+          text-align: center;
+          height: 750px;
+          background: #DDDDDD;
+        }
+
+        .carousel img {
+          text-align: center;
+          height: 750px;
+          width: 100%;
+          opacity: 0.8;
+          z-index: 1;
+          padding: 5rem 0 1rem;
+        }
+
+        .carousel-text {
+          position: absolute;
+          z-index: 9999;
+          margin: 10rem 20rem;
+          font-size: 3rem;
+          font-family: 'Rubik', 'sans-serif';
+          color: #F1F1F1;
+        }
+
+        .carousel i {
+          position: absolute;
+          top: 80%;
+          left: 45%;
+          font-size: 4rem;
+          color: aliceblue;
+          z-index: 10;
+        }
+
+        /* Volunteer */
+        .volunteer {
+          padding: 5% 10%;
+        }
+
+        #volunteer {
+          padding: 10% 10% 5%;
+          background-color: #857da1;
+          color: aliceblue;
+          position: relative;
+          z-index: 9999;
+          background-image: url("https://www.pngkey.com/png/full/771-7719417_volunteer-hands-raised-no-background.png");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size:cover;
+        }
+
+        .volunteer-img {
+          display: flex;
+          justify-content: center;
+          position: absolute;
+          z-index: 0;
+          top: 5%;
+          opacity: 0.5;
+          width: 60%;
+          height: auto;
+        }
+
+        /* Donate */
+
+        .donate {
+          height: 800px;
+          padding: 5% 10%;
+          line-height: 3;
+          font-weight: 100;
+          background-color: #857da1;
+        }
+
+        .donate-img {
+          border-radius: 100%;
+          border: 2px dashed #222;
+          width: 90%;
+          height: auto;
+          text-align: center;
+          padding: 5%;
+          margin: 30% 0;
+          float: left;
+        }
+
+        .donate .col-6 {
+          float: right;
+
+          
+        }
+
+        .donate .row {
+          margin: 0;
+          box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%), inset 0 -1px 0 rgb(0 0 0 / 10%);
+          background-color: #5C527F;
+        }
+
+        .donate h3 {
+          line-height: 1;
+          color: #222;
+        }
+
+        .donate-text {
+          padding: 5% 5%;
+        }
+
+        /* FAQs */
+        #FAQs {
+          position: relative;
+        }
+        .FAQs {
+          height: 600px;
+          text-align: center;
+        }
+
+        .faqs-heading {
+          color: #222;
+          font-size: 5rem;
+          margin: 7% 7% 3%;
+        }
+
+        .faqs-btn {
+          font-size: 1.5rem;
+          margin: 5%;
+          width: 500px;
+        }
+
+        .FAQs .row {
+          padding: 0 10%;
+          z-index: 9999;
+        }
+
+        .FAQs .dropdown-menu {
+          width: 500px;
+          padding: 3%;
+          line-height: 2;
+          text-align: center;
+          font-size: 20px;
+          background-color: #857da1;
+          color: aliceblue;
+        }
+
+        .faqs-bg1 {
+          position: absolute;
+          opacity: 0.5;
+          left: 25%;
+          width: 200px;
+          height: auto;
+        }
+
+        .faqs-bg2 {
+          position: absolute;
+          opacity: 0.5;
+          width: 150px;
+          right: 30%;
+        }
+
+        .faqs-bg3 {
+          position: absolute;
+          opacity: 0.5;
+          width: 250px;
+          right: 20%;
+        }
+
+        /* Footer */
+        .fab{
+          padding: 30px 10px;
+          color: #222;
+        }
+
+        .contact-us{
+          color: #222;
+        }
+
+        .copyrights {
+          background-color: #857da1;
+          padding: 3px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <!------------------------------- Nav Bar ------------------------------->
+    <div class="navigation">
+      <nav class="navbar navbar-expand-lg" style="background-color: #5C527F;">
+          <a class="navbar-brand" href="#">
+            <img src="https://svgsilh.com/svg_v2/1917895.svg" alt="">
+            Shiksha Bhavan
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#about-us">About Us<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#donate">Donate</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#FAQs">FAQs</a>
+              </li>
+              <li class="nav-item active">
+                  <a class="nav-link" href="#volunteer">Volunteer</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+
+    <!------------------------------- Title Carousel ------------------------------->
+    <section class="carousel" id="about-us">
+
+      <div id="title-carousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active container-fluid">
+            <h2 class="carousel-text">Over 10000+ children were given an opportunity to learn in rural areas, in the past 5 years</h2>
+            <i class="fas fa-book-open"></i>
+            
+            <img class="testimonial-img" src="https://files.globalgiving.org/pfil/1877/ph_1877_95501.jpg?m=1484220380000" alt="lady-profile">
+          </div>
+          <div class="carousel-item container-fluid">
+            <h2 class="carousel-text">25000+ Donators making free, quality education in rural areas possible </h2>
+            <i class="fas fa-heart"></i> 
+            <img class="testimonial-img" src="https://www.hotswup.org/wp-content/uploads/2020/02/0.jpg" alt="lady-profile">
+          </div>
+          <div class="carousel-item container-fluid">
+            <h2 class="carousel-text">500+ schools built in 420+ regions below the poverty line in India alone</h2>
+            <i class="fas fa-graduation-cap"></i>
+            <img class="testimonial-img" src="https://images.financialexpress.com/2020/08/rural-school.jpg?w=1200&h=800&imflag=true" alt="lady-profile">
+          </div>
+          <div class="carousel-item container-fluid">
+            <h2 class="carousel-text">5000+ Volunteers helping the organisation to teach, administer and transport</h2>
+            <i class="fas fa-hands-helping"></i>
+            <img class="testimonial-img" src="https://images.squarespace-cdn.com/content/v1/5cc85df3b7c92c8c1249d0d5/1588102439151-GOGRM76T16GY2A9IB3GA/HANDS.jpg" alt="lady-profile">
+          </div>
+        </div>
+        <a class="carousel-control-prev controls" type="button" data-target="#title-carousel" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next controls" type="button" data-target="#title-carousel" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden sr-only">Next</span>
+        </a> 
+      </div>
+    </section>
+
+    <!------------------------------- Donate ------------------------------->
+    
+    <section id="donate">
+
+      <div class="donate">
+        
+        <div class="row">
+          <div class="col-6 donate-text">
+            
+            <h1 class="card-title">Your Donations can make a child's future brighter</h1><br>
+            
+            <h4 class="card-body">
+              Just a ₹100 donation from you can help 2 children get a week of free education and a mid-day meal...the decision is yours
+            </h4>
+            
+          <br>
+            <h3>Make a difference...today</h3><br>
+            <a href="donate.html"><button class="btn btn-lg btn-outline-dark btn-block">Donate Now!</button></a>
+          </div>
+          <div class="col-6">
+            <img src="https://cdn.cdnparenting.com/articles/2018/10/530320216-H.jpg" alt="" class="donate-img">
+          </div>
+
+        </div>
+
+
+        
+        
+      </div>
+
+    </section>
+
+    <!------------------------------- FAQs ------------------------------->
+
+    <section id="FAQs">
+      <div class="FAQs">
+        <img class="faqs-bg1" src="https://lh3.googleusercontent.com/proxy/jyqA61hsJQ1hhBdrIs0hXsvi0h89R1noCN0iNCAUQt53lIBL-ccvBhUMuvTkFVmsACROIYOI-I83GN7obALtze68DXbuIxk" alt="">
+        <img class="faqs-bg2" src="https://lh3.googleusercontent.com/proxy/jyqA61hsJQ1hhBdrIs0hXsvi0h89R1noCN0iNCAUQt53lIBL-ccvBhUMuvTkFVmsACROIYOI-I83GN7obALtze68DXbuIxk" alt="">
+        <img class="faqs-bg3" src="https://lh3.googleusercontent.com/proxy/jyqA61hsJQ1hhBdrIs0hXsvi0h89R1noCN0iNCAUQt53lIBL-ccvBhUMuvTkFVmsACROIYOI-I83GN7obALtze68DXbuIxk" alt="">
+
+        <h1 class="faqs-heading">FAQs</h1>
+        <div class="row">
+          <div class="col-6">
+            <div>
+              <button class="btn btn-dark btn-lg dropdown-toggle faqs-btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Is this Charity recognised?
+              </button>
+              <div class="dropdown-menu dropdown1">
+                Yes! Top colleges from around the world; like Harvard University, MIT etc;  recognises Shiksha Bhavan 
+              </div>
+            </div>  
+            <div>
+              <button class="btn btn-dark btn-lg dropdown-toggle faqs-btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Are we a Non-Profit Organisation?
+              </button>
+              <div class="dropdown-menu dropdown2">
+                Ofcourse! All the money we get from donations is invested in building schools. Our man-power is all volunteers
+              </div>
+            </div>
+  
+            <div>
+              <button class="btn btn-dark btn-lg dropdown-toggle faqs-btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                How much money has been invested?
+              </button>
+              <div class="dropdown-menu">
+                We have invested over ₹1 crore in donations since the last 5 years!
+              </div>
+            </div>  
+          </div>
+          <div class="col-6">
+            <div>
+              <button class="btn btn-dark btn-lg dropdown-toggle faqs-btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Should you volunteer or donate?
+              </button>
+              <div class="dropdown-menu">
+                Its your call! If you have money, donate; If you have time, volunteer!
+              </div>
+            </div>  
+
+            <div>
+              <button class="btn btn-dark btn-lg dropdown-toggle faqs-btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                What curriculum do our schools teach?
+              </button>
+              <div class="dropdown-menu">
+                We teach CBSE curriculum using NCERT books, which are widely available
+              </div>
+            </div>
+            
+            <div>
+              <button class="btn btn-dark btn-lg dropdown-toggle faqs-btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                How else can you help?
+              </button>
+              <div class="dropdown-menu">
+                Tie ups! If you have a company of your own (catering, transport etc), contact us! We can form a tie up and help the unpriviledged children get a better future
+              </div>
+            </div>  
+
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+    <!------------------------------- Volunteer ------------------------------->
+    <section id="volunteer">
+      <img src="" alt="" class="volunteer-img">
+      <h1>Volunteer in schools near you!</h1>
+      <form class="volunteer">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">City</label>
+            <input type="text" class="form-control" id="inputCity" placeholder="Pune">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputState">State</label>
+            <select id="inputState" class="form-control">
+              <option selected>Choose...</option>
+              <option>Maharashtra</option><option>Kerala</option><option>Rajasthan</option><option>Madhya Pradesh</option><option>Orissa</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputZip">Zip</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+        </div>
+        <div class="form-group ">
+          <label for="inputAddress">Address</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="form-group">
+          <label for="inputEmail4">Email</label>
+          <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <label for="inputAddress2">Schools Around You</label>
+          <input type="text" class="form-control" id="inputAddress2">
+        </div> 
+
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Send Verification Email
+            </label>
+          </div>
+        </div>
+        <br><br><button type="submit" class="btn btn-lg btn-outline-dark btn-block">Volunteer!</button>
+      </form>
+
+    </section>
+
+    <!------------------------------- Footer ------------------------------->
+
+    <section id="footer">
+      <div class="footer">
+        <div class="contact-us">
+          Contact Us
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-reddit-square"></i>
+        </div>
+        <div class="copyrights" style="height: 30px;">
+          Made with ♥ by Ritika
+        </div>
+      </div>
+    </section>
+    <script>
+
+    </script>
+</body>
+</html>
